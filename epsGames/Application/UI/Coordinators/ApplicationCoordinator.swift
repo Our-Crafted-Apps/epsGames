@@ -14,11 +14,14 @@ final class ApplicationCoordinator: BaseCoordinator {
     }
     
     override func start() {
-        if isFirstLaunch {
-            runStartFlow()
-            isFirstLaunch = false
-            return
-        }
+        print("=start in ApplicationCoordinator")
+        runStartFlow()
+//если первый запуск приложения - показываем анимацию подсказок
+//        if isFirstLaunch {
+//            runStartFlow()
+//            isFirstLaunch = false
+//            return
+//        }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.runTabBarFlow()
@@ -56,12 +59,14 @@ final class ApplicationCoordinator: BaseCoordinator {
 //    }
 //
     private func runTabBarFlow() {
+        print("=runTabBarFlow")
         let coordinator = coordinatorFactory.makeTabBarCoordinator(router: router)
-        coordinator.finishFlow = { [weak self, weak coordinator] in
-            self?.isLogin = true
-            self?.start()
-            self?.removeDependency(coordinator)
-        }
+//        coordinator.finishFlow = { [weak self, weak coordinator] in
+//            self?.isLogin = true
+//            self?.start()
+//            self?.removeDependency(coordinator)
+//        }
+        coordinator.removeDependency(coordinator)
         self.addDependency(coordinator)
         coordinator.start()
     }

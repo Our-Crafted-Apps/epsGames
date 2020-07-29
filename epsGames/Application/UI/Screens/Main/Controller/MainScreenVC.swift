@@ -27,6 +27,7 @@ final class MainScreenVC<View: MainScreenView>: BaseViewController<View> {
         super.viewDidLoad()
         
         view.backgroundColor = .green
+        title = "555"
     }
     
 

@@ -21,10 +21,15 @@ final class TabBarCoordinator: BaseCoordinator {
     }
     
     override func start() {
+        print("=start in TabBarCoordinator")
         createVC()
     }
     
     private func createVC() {
+        let mainScreen = screenFactory.makeTabBarScreen()
+        //router.push(mainScreen, animated: false)
+        //router.setRootModule(mainScreen, hideBar: false)
+        router.setRootModule(mainScreen)
 
     }
     

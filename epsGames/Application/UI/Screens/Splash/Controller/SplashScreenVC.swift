@@ -21,6 +21,10 @@ final class SplashScreenVC<View: SplashScreenView>: BaseViewController<View> {
         checkLoginStatus()
     }
     
+    deinit {
+        print("=deinit SplashScreenVC")
+    }
+    
     private func checkLoginStatus() {
         let isLogin = false //loginStatusProvider.isLogin
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {

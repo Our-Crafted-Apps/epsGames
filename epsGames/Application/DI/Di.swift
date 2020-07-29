@@ -6,7 +6,6 @@ final class Di {
     fileprivate let coordinatorFactory: CoordinatorFactoryImpl
     
     init() {
-
         screenFactory = ScreenFactoryImpl()
         coordinatorFactory = CoordinatorFactoryImpl(screenFactory: screenFactory)
         
@@ -15,6 +14,7 @@ final class Di {
 }
 
 protocol AppFactory {
+    
     func makeKeyWindowWithCoordinator() -> (UIWindow, Coordinator)
 }
 
@@ -23,7 +23,7 @@ extension Di: AppFactory {
     func makeKeyWindowWithCoordinator() -> (UIWindow, Coordinator) {
         let window = UIWindow()
         let rootVC = UINavigationController()
-        rootVC.navigationBar.prefersLargeTitles = true
+        //rootVC.navigationBar.prefersLargeTitles = true
         let router = RouterImp(rootController: rootVC)
         let cooridnator = coordinatorFactory.makeApplicationCoordinator(router: router)
         window.rootViewController = rootVC
@@ -35,16 +35,22 @@ extension Di: AppFactory {
 protocol ScreenFactory {
     
     func makeSplashScreen() -> SplashScreenVC<SplashScreenViewImpl>
+    func makeTabBarScreen() -> MainScreenVC<MainScreenViewImpl>
     
 }
 
 final class ScreenFactoryImpl: ScreenFactory {
+    
     fileprivate weak var di: Di!
     fileprivate init(){}
     
     func makeSplashScreen() -> SplashScreenVC<SplashScreenViewImpl> {
         return SplashScreenVC<SplashScreenViewImpl>()
         //(loginStatusProvider: di.loginStatusProvider)
+    }
+    
+    func makeTabBarScreen() ->MainScreenVC<MainScreenViewImpl> {
+        return MainScreenVC<MainScreenViewImpl>()
     }
 }
 
