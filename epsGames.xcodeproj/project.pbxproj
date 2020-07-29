@@ -28,9 +28,11 @@
 		8D6A013324D1A7C200D91F34 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A012F24D1A7C200D91F34 /* ApplicationCoordinator.swift */; };
 		8D6A013524D1A7C200D91F34 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A013124D1A7C200D91F34 /* StartCoordinator.swift */; };
 		8D6A013E24D1A7E600D91F34 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A013924D1A7E600D91F34 /* SplashScreenVC.swift */; };
-		8D6A013F24D1A7E600D91F34 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A013B24D1A7E600D91F34 /* SplashScreenView.swift */; };
 		8D6A014024D1A7E600D91F34 /* SplashScreenViewImpl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D6A013C24D1A7E600D91F34 /* SplashScreenViewImpl.xib */; };
 		8D6A014124D1A7E600D91F34 /* SplashScreenViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A013D24D1A7E600D91F34 /* SplashScreenViewImpl.swift */; };
+		8D6A014524D1B16D00D91F34 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A014424D1B16D00D91F34 /* MainScreenVC.swift */; };
+		8D6A014A24D1B4DB00D91F34 /* MainScreenViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A014924D1B4DB00D91F34 /* MainScreenViewImpl.swift */; };
+		8D6A014C24D1B71300D91F34 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A014B24D1B71300D91F34 /* TabBarCoordinator.swift */; };
 		E1B90E0124CDFF4B0009D3A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B90E0024CDFF4B0009D3A0 /* AppDelegate.swift */; };
 		E1B90E0A24CDFF4C0009D3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */; };
 		E1B90E0D24CDFF4C0009D3A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B90E0B24CDFF4C0009D3A0 /* LaunchScreen.storyboard */; };
@@ -77,9 +79,11 @@
 		8D6A012F24D1A7C200D91F34 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		8D6A013124D1A7C200D91F34 /* StartCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartCoordinator.swift; sourceTree = "<group>"; };
 		8D6A013924D1A7E600D91F34 /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
-		8D6A013B24D1A7E600D91F34 /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		8D6A013C24D1A7E600D91F34 /* SplashScreenViewImpl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreenViewImpl.xib; sourceTree = "<group>"; };
 		8D6A013D24D1A7E600D91F34 /* SplashScreenViewImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewImpl.swift; sourceTree = "<group>"; };
+		8D6A014424D1B16D00D91F34 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
+		8D6A014924D1B4DB00D91F34 /* MainScreenViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewImpl.swift; sourceTree = "<group>"; };
+		8D6A014B24D1B71300D91F34 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		E1B90DFD24CDFF4B0009D3A0 /* epsGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epsGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B90E0024CDFF4B0009D3A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 			children = (
 				8D6A012F24D1A7C200D91F34 /* ApplicationCoordinator.swift */,
 				8D6A013124D1A7C200D91F34 /* StartCoordinator.swift */,
+				8D6A014B24D1B71300D91F34 /* TabBarCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -253,6 +258,8 @@
 		8D6A013624D1A7D300D91F34 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8D6A014324D1B13400D91F34 /* Main */,
+				8D6A014224D1B10E00D91F34 /* TabBar */,
 				8D6A013724D1A7E600D91F34 /* Splash */,
 			);
 			path = Screens;
@@ -278,9 +285,48 @@
 		8D6A013A24D1A7E600D91F34 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8D6A013B24D1A7E600D91F34 /* SplashScreenView.swift */,
 				8D6A013C24D1A7E600D91F34 /* SplashScreenViewImpl.xib */,
 				8D6A013D24D1A7E600D91F34 /* SplashScreenViewImpl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D6A014224D1B10E00D91F34 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		8D6A014324D1B13400D91F34 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8D6A014724D1B49500D91F34 /* View */,
+				8D6A014624D1B48200D91F34 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8D6A014624D1B48200D91F34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D6A014424D1B16D00D91F34 /* MainScreenVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D6A014724D1B49500D91F34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D6A014824D1B4B100D91F34 /* View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D6A014824D1B4B100D91F34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D6A014924D1B4DB00D91F34 /* MainScreenViewImpl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -471,12 +517,14 @@
 				8D6A011224D1A77B00D91F34 /* KeychainItemAccessibility.swift in Sources */,
 				8D6A013E24D1A7E600D91F34 /* SplashScreenVC.swift in Sources */,
 				8D6A010E24D1A77B00D91F34 /* Optional+Apply.swift in Sources */,
+				8D6A014A24D1B4DB00D91F34 /* MainScreenViewImpl.swift in Sources */,
+				8D6A014C24D1B71300D91F34 /* TabBarCoordinator.swift in Sources */,
 				8D6A012624D1A78700D91F34 /* UIView+hide.swift in Sources */,
-				8D6A013F24D1A7E600D91F34 /* SplashScreenView.swift in Sources */,
 				8D6A012524D1A78700D91F34 /* UIView+addSubviewWithSameSize.swift in Sources */,
 				8D6A012824D1A78700D91F34 /* BaseViewController.swift in Sources */,
 				8D6A013524D1A7C200D91F34 /* StartCoordinator.swift in Sources */,
 				8D6A011024D1A77B00D91F34 /* Functions.swift in Sources */,
+				8D6A014524D1B16D00D91F34 /* MainScreenVC.swift in Sources */,
 				8D6A010524D1A76900D91F34 /* Coordinator.swift in Sources */,
 				8D6A012724D1A78700D91F34 /* loadFromNib.swift in Sources */,
 				E1B90E0124CDFF4B0009D3A0 /* AppDelegate.swift in Sources */,

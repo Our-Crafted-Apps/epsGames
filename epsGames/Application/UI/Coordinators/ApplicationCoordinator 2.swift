@@ -20,15 +20,11 @@ final class ApplicationCoordinator: BaseCoordinator {
             return
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.runTabBarFlow()
+        if isLogin {
+            runMovieFlow()
+        } else {
+            runLoginFlow()
         }
-        
-//        if isLogin {
-//            runMovieFlow()
-//        } else {
-//            runLoginFlow()
-//        }
     }
     
     private func runStartFlow() {
@@ -43,20 +39,20 @@ final class ApplicationCoordinator: BaseCoordinator {
         coordinator.start()
     }
     
-//    private func runLoginFlow() {
-//
-//        let coordinator = coordinatorFactory.makeLoginCoordinator(router: router)
-//        coordinator.finishFlow = { [weak self, weak coordinator] in
-//            self?.isLogin = true
-//            self?.start()
-//            self?.removeDependency(coordinator)
-//        }
-//        self.addDependency(coordinator)
-//        coordinator.start()
-//    }
-//
-    private func runTabBarFlow() {
-        let coordinator = coordinatorFactory.makeTabBarCoordinator(router: router)
+    private func runLoginFlow() {
+        
+        let coordinator = coordinatorFactory.makeLoginCoordinator(router: router)
+        coordinator.finishFlow = { [weak self, weak coordinator] in
+            self?.isLogin = true
+            self?.start()
+            self?.removeDependency(coordinator)
+        }
+        self.addDependency(coordinator)
+        coordinator.start()
+    }
+    
+    private func runMovieFlow() {
+        let coordinator = coordinatorFactory.makeMovieCoordinator(router: router)
         coordinator.finishFlow = { [weak self, weak coordinator] in
             self?.isLogin = true
             self?.start()

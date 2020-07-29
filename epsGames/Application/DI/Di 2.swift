@@ -4,6 +4,9 @@ final class Di {
     
     fileprivate let screenFactory: ScreenFactoryImpl
     fileprivate let coordinatorFactory: CoordinatorFactoryImpl
+
+    
+
     
     init() {
 
@@ -43,8 +46,7 @@ final class ScreenFactoryImpl: ScreenFactory {
     fileprivate init(){}
     
     func makeSplashScreen() -> SplashScreenVC<SplashScreenViewImpl> {
-        return SplashScreenVC<SplashScreenViewImpl>()
-        //(loginStatusProvider: di.loginStatusProvider)
+        return SplashScreenVC<SplashScreenViewImpl>(loginStatusProvider: di.loginStatusProvider)
     }
 }
 
@@ -53,15 +55,13 @@ protocol CoordinatorFactory {
     func makeApplicationCoordinator(router: Router) -> ApplicationCoordinator
     
     func makeStartCoordinator(router: Router) -> StartCoordinator
-    
-    func makeTabBarCoordinator(router: Router) -> TabBarCoordinator
 }
 
 final class CoordinatorFactoryImpl: CoordinatorFactory {
     
     private let screenFactory: ScreenFactory
     
-    fileprivate init(screenFactory: ScreenFactory) {
+    fileprivate init(screenFactory: ScreenFactory){
         self.screenFactory = screenFactory
     }
     
@@ -69,12 +69,9 @@ final class CoordinatorFactoryImpl: CoordinatorFactory {
         return ApplicationCoordinator(router: router, coordinatorFactory: self)
     }
 
+    
     func makeStartCoordinator(router: Router) -> StartCoordinator {
         return StartCoordinator(router: router, screenFactory: screenFactory)
-    }
-    
-    func makeTabBarCoordinator(router: Router) -> TabBarCoordinator {
-        return TabBarCoordinator(router: router, screenFactory: screenFactory)
     }
 }
 
