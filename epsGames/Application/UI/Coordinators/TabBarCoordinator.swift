@@ -28,6 +28,7 @@ final class TabBarCoordinator: BaseCoordinator {
     private func createTabBatVC() {
         let tabBarScreen = screenFactory.makeTabBarScreen()
         let mainScreen = screenFactory.makeMainScreen()
+        mainScreen.tabBarItem = UITabBarItem(title: "Main", image: UIImage(named: "tab_icon_main"), tag: 0)
         tabBarScreen.viewControllers = [mainScreen]
         //router.push(mainScreen, animated: false)
         //router.setRootModule(mainScreen, hideBar: false)

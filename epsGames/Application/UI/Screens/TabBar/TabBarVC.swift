@@ -9,11 +9,14 @@
 import UIKit
 
 class TabBarVC: UITabBarController {
-//final class TabBarVC<View: TabBarScreenView>: BaseViewController<View> {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//        надо подумать как будем делать заголовки
+        navigationItem.title = "EPS Games"
+    }
 
 
 }
 
-
-
-//final class TabBarVC<View>: BaseViewController<View> {}
