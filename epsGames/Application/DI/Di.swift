@@ -23,6 +23,7 @@ extension Di: AppFactory {
     func makeKeyWindowWithCoordinator() -> (UIWindow, Coordinator) {
         let window = UIWindow()
         let rootVC = UINavigationController()
+//        Нужно подумать над тем как реализовать выбор типа нав бара
         //rootVC.navigationBar.prefersLargeTitles = true
         let router = RouterImp(rootController: rootVC)
         let cooridnator = coordinatorFactory.makeApplicationCoordinator(router: router)
@@ -35,7 +36,8 @@ extension Di: AppFactory {
 protocol ScreenFactory {
     
     func makeSplashScreen() -> SplashScreenVC<SplashScreenViewImpl>
-    func makeTabBarScreen() -> MainScreenVC<MainScreenViewImpl>
+    func makeTabBarScreen() -> TabBarVC
+    func makeMainScreen() -> MainScreenVC<MainScreenViewImpl>
     
 }
 
@@ -49,7 +51,11 @@ final class ScreenFactoryImpl: ScreenFactory {
         //(loginStatusProvider: di.loginStatusProvider)
     }
     
-    func makeTabBarScreen() ->MainScreenVC<MainScreenViewImpl> {
+    func makeTabBarScreen() -> TabBarVC {
+        return TabBarVC()
+    }
+    
+    func makeMainScreen() -> MainScreenVC<MainScreenViewImpl> {
         return MainScreenVC<MainScreenViewImpl>()
     }
 }

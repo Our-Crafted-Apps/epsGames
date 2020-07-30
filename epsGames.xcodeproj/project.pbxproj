@@ -33,6 +33,9 @@
 		8D6A014524D1B16D00D91F34 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A014424D1B16D00D91F34 /* MainScreenVC.swift */; };
 		8D6A014A24D1B4DB00D91F34 /* MainScreenViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A014924D1B4DB00D91F34 /* MainScreenViewImpl.swift */; };
 		8D6A014C24D1B71300D91F34 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A014B24D1B71300D91F34 /* TabBarCoordinator.swift */; };
+		8D9FB3E424D2FCF9005B2DE8 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FB3E324D2FCF9005B2DE8 /* TabBarVC.swift */; };
+		8D9FB3E924D30557005B2DE8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FB3E824D30557005B2DE8 /* StringExtensions.swift */; };
+		8D9FB3EC24D30952005B2DE8 /* TabBarViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FB3EB24D30952005B2DE8 /* TabBarViewImpl.swift */; };
 		E1B90E0124CDFF4B0009D3A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B90E0024CDFF4B0009D3A0 /* AppDelegate.swift */; };
 		E1B90E0A24CDFF4C0009D3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */; };
 		E1B90E0D24CDFF4C0009D3A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B90E0B24CDFF4C0009D3A0 /* LaunchScreen.storyboard */; };
@@ -84,6 +87,9 @@
 		8D6A014424D1B16D00D91F34 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
 		8D6A014924D1B4DB00D91F34 /* MainScreenViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewImpl.swift; sourceTree = "<group>"; };
 		8D6A014B24D1B71300D91F34 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		8D9FB3E324D2FCF9005B2DE8 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		8D9FB3E824D30557005B2DE8 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		8D9FB3EB24D30952005B2DE8 /* TabBarViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewImpl.swift; sourceTree = "<group>"; };
 		E1B90DFD24CDFF4B0009D3A0 /* epsGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epsGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B90E0024CDFF4B0009D3A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 		8D6A010024D1A74800D91F34 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				8D9FB3E724D304D6005B2DE8 /* Foundation */,
 				8D6A011424D1A78700D91F34 /* UIKIt */,
 				8D6A010124D1A76900D91F34 /* Coordinator */,
 			);
@@ -258,6 +265,7 @@
 		8D6A013624D1A7D300D91F34 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8D9FB3ED24D30AAB005B2DE8 /* Search */,
 				8D6A014324D1B13400D91F34 /* Main */,
 				8D6A014224D1B10E00D91F34 /* TabBar */,
 				8D6A013724D1A7E600D91F34 /* Splash */,
@@ -294,6 +302,8 @@
 		8D6A014224D1B10E00D91F34 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				8D9FB3E324D2FCF9005B2DE8 /* TabBarVC.swift */,
+				8D9FB3EB24D30952005B2DE8 /* TabBarViewImpl.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -318,17 +328,31 @@
 		8D6A014724D1B49500D91F34 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8D6A014824D1B4B100D91F34 /* View */,
+				8D6A014924D1B4DB00D91F34 /* MainScreenViewImpl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		8D6A014824D1B4B100D91F34 /* View */ = {
+		8D9FB3E724D304D6005B2DE8 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				8D6A014924D1B4DB00D91F34 /* MainScreenViewImpl.swift */,
+				8D9FB3E824D30557005B2DE8 /* StringExtensions.swift */,
 			);
-			path = View;
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		8D9FB3EA24D30566005B2DE8 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		8D9FB3ED24D30AAB005B2DE8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		E1B90DF424CDFF4A0009D3A0 = {
@@ -354,6 +378,7 @@
 		E1B90DFF24CDFF4B0009D3A0 /* epsGames */ = {
 			isa = PBXGroup;
 			children = (
+				8D9FB3EA24D30566005B2DE8 /* Localization */,
 				8D6A010024D1A74800D91F34 /* Library */,
 				8D626C7424D1A3C800CE94D1 /* Application */,
 				E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */,
@@ -518,6 +543,7 @@
 				8D6A013E24D1A7E600D91F34 /* SplashScreenVC.swift in Sources */,
 				8D6A010E24D1A77B00D91F34 /* Optional+Apply.swift in Sources */,
 				8D6A014A24D1B4DB00D91F34 /* MainScreenViewImpl.swift in Sources */,
+				8D9FB3EC24D30952005B2DE8 /* TabBarViewImpl.swift in Sources */,
 				8D6A014C24D1B71300D91F34 /* TabBarCoordinator.swift in Sources */,
 				8D6A012624D1A78700D91F34 /* UIView+hide.swift in Sources */,
 				8D6A012524D1A78700D91F34 /* UIView+addSubviewWithSameSize.swift in Sources */,
@@ -525,6 +551,7 @@
 				8D6A013524D1A7C200D91F34 /* StartCoordinator.swift in Sources */,
 				8D6A011024D1A77B00D91F34 /* Functions.swift in Sources */,
 				8D6A014524D1B16D00D91F34 /* MainScreenVC.swift in Sources */,
+				8D9FB3E924D30557005B2DE8 /* StringExtensions.swift in Sources */,
 				8D6A010524D1A76900D91F34 /* Coordinator.swift in Sources */,
 				8D6A012724D1A78700D91F34 /* loadFromNib.swift in Sources */,
 				E1B90E0124CDFF4B0009D3A0 /* AppDelegate.swift in Sources */,
@@ -534,6 +561,7 @@
 				8D6A012B24D1A78700D91F34 /* PreviewContainer.swift in Sources */,
 				8D6A012A24D1A78700D91F34 /* UITableView + dequeue.swift in Sources */,
 				8D6A011324D1A77B00D91F34 /* Types.swift in Sources */,
+				8D9FB3E424D2FCF9005B2DE8 /* TabBarVC.swift in Sources */,
 				8D6A012324D1A78700D91F34 /* UIAlertControllerCommonInputData.swift in Sources */,
 				8D6A012924D1A78700D91F34 /* ContainerViewController.swift in Sources */,
 				8D6A00FF24D1A6FD00D91F34 /* Di.swift in Sources */,
