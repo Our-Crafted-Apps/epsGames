@@ -18,10 +18,10 @@ final class StartCoordinator: BaseCoordinator {
     
     private func showSplash() {
         let splashScreen = screenFactory.makeSplashScreen()
-//        splashScreen.onCheck = { [weak self] isLogin in
-//            self?.finishFlow?(isLogin)
-//        }
-        
         router.setRootModule(splashScreen, hideBar: true)
+        splashScreen.onCheck = { [weak self] isLogin in
+            self?.finishFlow?(isLogin)
+        }
+        //router.setRootModule(splashScreen, hideBar: true)
     }
 }

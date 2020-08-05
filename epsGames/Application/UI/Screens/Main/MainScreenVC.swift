@@ -26,7 +26,15 @@ final class MainScreenVC<View: MainScreenView>: BaseViewController<View> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .green
+        view.backgroundColor = .white
+//        navigationItem.title = "EPS Games"
+//        navigationController?.navigationBar.topItem?.title = "111"
+//        tabBarController?.navigationItem.title = "333"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.navigationItem.title = "EPS Games"
     }
     
 

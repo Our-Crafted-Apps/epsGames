@@ -6,7 +6,7 @@ final class ApplicationCoordinator: BaseCoordinator {
     private let router: Router
     
     private var isFirstLaunch = true
-    private var isLogin = false
+    private var isLogin = false 
     
     init(router: Router, coordinatorFactory: CoordinatorFactoryImpl) {
         self.router = router
@@ -16,16 +16,17 @@ final class ApplicationCoordinator: BaseCoordinator {
     override func start() {
         print("=start in ApplicationCoordinator")
         runStartFlow()
-//если первый запуск приложения - показываем анимацию подсказок
+//      если первый запуск приложения - показываем анимацию подсказок
+        
 //        if isFirstLaunch {
 //            runStartFlow()
 //            isFirstLaunch = false
 //            return
 //        }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.runTabBarFlow()
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//            self.runTabBarFlow()
+//        }
         
 //        if isLogin {
 //            runMovieFlow()
@@ -35,29 +36,19 @@ final class ApplicationCoordinator: BaseCoordinator {
     }
     
     private func runStartFlow() {
-        
+        print("=runStartFlow")
         let coordinator = coordinatorFactory.makeStartCoordinator(router: router)
-        coordinator.finishFlow = { [weak self, weak coordinator] isLogin in
-            self?.isLogin = isLogin
-            self?.start()
+        coordinator.finishFlow = { [weak self, weak coordinator] isLoadSetting in
+            print("=isLoadSetting: \(isLoadSetting)")
+            //нужно определить тип ответа и в зависимости загружены данные или нет выбирать действие
+           // self?.start() //не понял зачем эта строка тут была в оригинале?
             self?.removeDependency(coordinator)
+            self?.runTabBarFlow()
         }
         self.addDependency(coordinator)
         coordinator.start()
     }
     
-//    private func runLoginFlow() {
-//
-//        let coordinator = coordinatorFactory.makeLoginCoordinator(router: router)
-//        coordinator.finishFlow = { [weak self, weak coordinator] in
-//            self?.isLogin = true
-//            self?.start()
-//            self?.removeDependency(coordinator)
-//        }
-//        self.addDependency(coordinator)
-//        coordinator.start()
-//    }
-//
     private func runTabBarFlow() {
         print("=runTabBarFlow")
         let coordinator = coordinatorFactory.makeTabBarCoordinator(router: router)

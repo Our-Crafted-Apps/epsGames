@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D165A6B24D979AA00D06C77 /* SettingProvaider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D165A6A24D979AA00D06C77 /* SettingProvaider.swift */; };
+		8D165A6E24D99D1600D06C77 /* MainPageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D165A6D24D99D1600D06C77 /* MainPageProvider.swift */; };
+		8D165A7024D9A44000D06C77 /* MessageScreenViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D165A6F24D9A44000D06C77 /* MessageScreenViewImpl.swift */; };
+		8D165A7224D9A73300D06C77 /* ProfileScreenViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D165A7124D9A73300D06C77 /* ProfileScreenViewImpl.swift */; };
 		8D6A00FF24D1A6FD00D91F34 /* Di.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A00FE24D1A6FD00D91F34 /* Di.swift */; };
 		8D6A010424D1A76900D91F34 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A010224D1A76900D91F34 /* Router.swift */; };
 		8D6A010524D1A76900D91F34 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A010324D1A76900D91F34 /* Coordinator.swift */; };
@@ -35,6 +39,15 @@
 		8D6A014C24D1B71300D91F34 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A014B24D1B71300D91F34 /* TabBarCoordinator.swift */; };
 		8D9FB3E424D2FCF9005B2DE8 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FB3E324D2FCF9005B2DE8 /* TabBarVC.swift */; };
 		8D9FB3E924D30557005B2DE8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FB3E824D30557005B2DE8 /* StringExtensions.swift */; };
+		8DA33EAC24D33B4E007F4CCA /* SearchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA33EAB24D33B4E007F4CCA /* SearchScreenVC.swift */; };
+		8DA33EAE24D33B89007F4CCA /* ScreenScreenViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA33EAD24D33B89007F4CCA /* ScreenScreenViewImpl.swift */; };
+		8DA5C7BC24D9639000C8D2B0 /* MessageScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5C7BB24D9639000C8D2B0 /* MessageScreenVC.swift */; };
+		8DA5C7BE24D963DE00C8D2B0 /* ProfileScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5C7BD24D963DE00C8D2B0 /* ProfileScreenVC.swift */; };
+		8DA5C7C224D964E800C8D2B0 /* SettingServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5C7C124D964E800C8D2B0 /* SettingServiceImp.swift */; };
+		8DA5C7C524D965E000C8D2B0 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5C7C424D965E000C8D2B0 /* Platform.swift */; };
+		8DA5C7C724D966D600C8D2B0 /* Patition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5C7C624D966D600C8D2B0 /* Patition.swift */; };
+		8DA5C7CA24D9677500C8D2B0 /* GamesScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5C7C924D9677500C8D2B0 /* GamesScreenVC.swift */; };
+		8DA5C7CC24D9679400C8D2B0 /* GamesScreenViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5C7CB24D9679400C8D2B0 /* GamesScreenViewImpl.swift */; };
 		E1B90E0124CDFF4B0009D3A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B90E0024CDFF4B0009D3A0 /* AppDelegate.swift */; };
 		E1B90E0A24CDFF4C0009D3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */; };
 		E1B90E0D24CDFF4C0009D3A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B90E0B24CDFF4C0009D3A0 /* LaunchScreen.storyboard */; };
@@ -60,6 +73,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D165A6A24D979AA00D06C77 /* SettingProvaider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProvaider.swift; sourceTree = "<group>"; };
+		8D165A6D24D99D1600D06C77 /* MainPageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageProvider.swift; sourceTree = "<group>"; };
+		8D165A6F24D9A44000D06C77 /* MessageScreenViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreenViewImpl.swift; sourceTree = "<group>"; };
+		8D165A7124D9A73300D06C77 /* ProfileScreenViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewImpl.swift; sourceTree = "<group>"; };
 		8D6A00FE24D1A6FD00D91F34 /* Di.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Di.swift; sourceTree = "<group>"; };
 		8D6A010224D1A76900D91F34 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8D6A010324D1A76900D91F34 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -88,6 +105,15 @@
 		8D6A014B24D1B71300D91F34 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		8D9FB3E324D2FCF9005B2DE8 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		8D9FB3E824D30557005B2DE8 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		8DA33EAB24D33B4E007F4CCA /* SearchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenVC.swift; sourceTree = "<group>"; };
+		8DA33EAD24D33B89007F4CCA /* ScreenScreenViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenScreenViewImpl.swift; sourceTree = "<group>"; };
+		8DA5C7BB24D9639000C8D2B0 /* MessageScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreenVC.swift; sourceTree = "<group>"; };
+		8DA5C7BD24D963DE00C8D2B0 /* ProfileScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenVC.swift; sourceTree = "<group>"; };
+		8DA5C7C124D964E800C8D2B0 /* SettingServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingServiceImp.swift; sourceTree = "<group>"; };
+		8DA5C7C424D965E000C8D2B0 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		8DA5C7C624D966D600C8D2B0 /* Patition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patition.swift; sourceTree = "<group>"; };
+		8DA5C7C924D9677500C8D2B0 /* GamesScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesScreenVC.swift; sourceTree = "<group>"; };
+		8DA5C7CB24D9679400C8D2B0 /* GamesScreenViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesScreenViewImpl.swift; sourceTree = "<group>"; };
 		E1B90DFD24CDFF4B0009D3A0 /* epsGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epsGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B90E0024CDFF4B0009D3A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,11 +152,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D165A6924D9799300D06C77 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				8D165A6A24D979AA00D06C77 /* SettingProvaider.swift */,
+				8D165A6D24D99D1600D06C77 /* MainPageProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
 		8D626C7424D1A3C800CE94D1 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				8D6A012C24D1A7AE00D91F34 /* UI */,
 				8D6A00FD24D1A6D400D91F34 /* DI */,
+				8D6A012C24D1A7AE00D91F34 /* UI */,
+				8DA5C7BF24D9647F00C8D2B0 /* Model */,
 				E1B90E0024CDFF4B0009D3A0 /* AppDelegate.swift */,
 			);
 			path = Application;
@@ -263,6 +299,9 @@
 		8D6A013624D1A7D300D91F34 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8DA5C7C824D9676400C8D2B0 /* Games */,
+				8DA5C7BA24D9637100C8D2B0 /* Message */,
+				8DA5C7B924D9636400C8D2B0 /* Profile */,
 				8D9FB3ED24D30AAB005B2DE8 /* Search */,
 				8D6A014324D1B13400D91F34 /* Main */,
 				8D6A014224D1B10E00D91F34 /* TabBar */,
@@ -274,27 +313,11 @@
 		8D6A013724D1A7E600D91F34 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				8D6A013824D1A7E600D91F34 /* Controller */,
-				8D6A013A24D1A7E600D91F34 /* View */,
-			);
-			path = Splash;
-			sourceTree = "<group>";
-		};
-		8D6A013824D1A7E600D91F34 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8D6A013924D1A7E600D91F34 /* SplashScreenVC.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8D6A013A24D1A7E600D91F34 /* View */ = {
-			isa = PBXGroup;
-			children = (
 				8D6A013C24D1A7E600D91F34 /* SplashScreenViewImpl.xib */,
+				8D6A013924D1A7E600D91F34 /* SplashScreenVC.swift */,
 				8D6A013D24D1A7E600D91F34 /* SplashScreenViewImpl.swift */,
 			);
-			path = View;
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		8D6A014224D1B10E00D91F34 /* TabBar */ = {
@@ -308,26 +331,10 @@
 		8D6A014324D1B13400D91F34 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				8D6A014724D1B49500D91F34 /* View */,
-				8D6A014624D1B48200D91F34 /* Controller */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		8D6A014624D1B48200D91F34 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
+				8D6A014924D1B4DB00D91F34 /* MainScreenViewImpl.swift */,
 				8D6A014424D1B16D00D91F34 /* MainScreenVC.swift */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8D6A014724D1B49500D91F34 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8D6A014924D1B4DB00D91F34 /* MainScreenViewImpl.swift */,
-			);
-			path = View;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		8D9FB3E724D304D6005B2DE8 /* Foundation */ = {
@@ -348,8 +355,79 @@
 		8D9FB3ED24D30AAB005B2DE8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				8DA33EAB24D33B4E007F4CCA /* SearchScreenVC.swift */,
+				8DA33EAD24D33B89007F4CCA /* ScreenScreenViewImpl.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		8DA5C7B724D962A000C8D2B0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		8DA5C7B824D962BD00C8D2B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8DA5C7B924D9636400C8D2B0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8DA5C7BD24D963DE00C8D2B0 /* ProfileScreenVC.swift */,
+				8D165A7124D9A73300D06C77 /* ProfileScreenViewImpl.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8DA5C7BA24D9637100C8D2B0 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				8DA5C7BB24D9639000C8D2B0 /* MessageScreenVC.swift */,
+				8D165A6F24D9A44000D06C77 /* MessageScreenViewImpl.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		8DA5C7BF24D9647F00C8D2B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D165A6924D9799300D06C77 /* Provider */,
+				8DA5C7C324D965C800C8D2B0 /* Entity */,
+				8DA5C7C024D9648600C8D2B0 /* Service */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DA5C7C024D9648600C8D2B0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8DA5C7C124D964E800C8D2B0 /* SettingServiceImp.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8DA5C7C324D965C800C8D2B0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8DA5C7C424D965E000C8D2B0 /* Platform.swift */,
+				8DA5C7C624D966D600C8D2B0 /* Patition.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8DA5C7C824D9676400C8D2B0 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				8DA5C7C924D9677500C8D2B0 /* GamesScreenVC.swift */,
+				8DA5C7CB24D9679400C8D2B0 /* GamesScreenViewImpl.swift */,
+			);
+			path = Games;
 			sourceTree = "<group>";
 		};
 		E1B90DF424CDFF4A0009D3A0 = {
@@ -376,9 +454,10 @@
 			isa = PBXGroup;
 			children = (
 				8D9FB3EA24D30566005B2DE8 /* Localization */,
+				8DA5C7B824D962BD00C8D2B0 /* Resources */,
 				8D6A010024D1A74800D91F34 /* Library */,
+				8DA5C7B724D962A000C8D2B0 /* Configuration */,
 				8D626C7424D1A3C800CE94D1 /* Application */,
-				E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */,
 				E1B90E0B24CDFF4C0009D3A0 /* LaunchScreen.storyboard */,
 				E1B90E0E24CDFF4C0009D3A0 /* Info.plist */,
 			);
@@ -534,33 +613,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D165A7024D9A44000D06C77 /* MessageScreenViewImpl.swift in Sources */,
 				8D6A011124D1A77B00D91F34 /* KeychainWrapper.swift in Sources */,
 				8D6A010424D1A76900D91F34 /* Router.swift in Sources */,
 				8D6A011224D1A77B00D91F34 /* KeychainItemAccessibility.swift in Sources */,
 				8D6A013E24D1A7E600D91F34 /* SplashScreenVC.swift in Sources */,
 				8D6A010E24D1A77B00D91F34 /* Optional+Apply.swift in Sources */,
 				8D6A014A24D1B4DB00D91F34 /* MainScreenViewImpl.swift in Sources */,
+				8DA5C7CC24D9679400C8D2B0 /* GamesScreenViewImpl.swift in Sources */,
+				8DA33EAC24D33B4E007F4CCA /* SearchScreenVC.swift in Sources */,
 				8D6A014C24D1B71300D91F34 /* TabBarCoordinator.swift in Sources */,
 				8D6A012624D1A78700D91F34 /* UIView+hide.swift in Sources */,
 				8D6A012524D1A78700D91F34 /* UIView+addSubviewWithSameSize.swift in Sources */,
+				8D165A6E24D99D1600D06C77 /* MainPageProvider.swift in Sources */,
 				8D6A012824D1A78700D91F34 /* BaseViewController.swift in Sources */,
 				8D6A013524D1A7C200D91F34 /* StartCoordinator.swift in Sources */,
 				8D6A011024D1A77B00D91F34 /* Functions.swift in Sources */,
 				8D6A014524D1B16D00D91F34 /* MainScreenVC.swift in Sources */,
+				8D165A6B24D979AA00D06C77 /* SettingProvaider.swift in Sources */,
+				8DA5C7BC24D9639000C8D2B0 /* MessageScreenVC.swift in Sources */,
 				8D9FB3E924D30557005B2DE8 /* StringExtensions.swift in Sources */,
+				8DA5C7C524D965E000C8D2B0 /* Platform.swift in Sources */,
+				8DA5C7C724D966D600C8D2B0 /* Patition.swift in Sources */,
 				8D6A010524D1A76900D91F34 /* Coordinator.swift in Sources */,
 				8D6A012724D1A78700D91F34 /* loadFromNib.swift in Sources */,
 				E1B90E0124CDFF4B0009D3A0 /* AppDelegate.swift in Sources */,
 				8D6A014124D1A7E600D91F34 /* SplashScreenViewImpl.swift in Sources */,
 				8D6A012424D1A78700D91F34 /* UIAlertController+InitFromCommonInputData.swift in Sources */,
+				8D165A7224D9A73300D06C77 /* ProfileScreenViewImpl.swift in Sources */,
 				8D6A010F24D1A77B00D91F34 /* Optional+Execute.swift in Sources */,
 				8D6A012B24D1A78700D91F34 /* PreviewContainer.swift in Sources */,
 				8D6A012A24D1A78700D91F34 /* UITableView + dequeue.swift in Sources */,
 				8D6A011324D1A77B00D91F34 /* Types.swift in Sources */,
 				8D9FB3E424D2FCF9005B2DE8 /* TabBarVC.swift in Sources */,
+				8DA5C7BE24D963DE00C8D2B0 /* ProfileScreenVC.swift in Sources */,
+				8DA5C7C224D964E800C8D2B0 /* SettingServiceImp.swift in Sources */,
 				8D6A012324D1A78700D91F34 /* UIAlertControllerCommonInputData.swift in Sources */,
 				8D6A012924D1A78700D91F34 /* ContainerViewController.swift in Sources */,
+				8DA5C7CA24D9677500C8D2B0 /* GamesScreenVC.swift in Sources */,
 				8D6A00FF24D1A6FD00D91F34 /* Di.swift in Sources */,
+				8DA33EAE24D33B89007F4CCA /* ScreenScreenViewImpl.swift in Sources */,
 				8D6A013324D1A7C200D91F34 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

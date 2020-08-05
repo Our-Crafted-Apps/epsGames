@@ -10,11 +10,10 @@ import UIKit
 
 class TabBarVC: UITabBarController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        надо подумать как будем делать заголовки
-        navigationItem.title = "EPS Games"
+        //navigationItem.title = "EPS Games"
     }
 
 
