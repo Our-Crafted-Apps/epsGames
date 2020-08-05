@@ -35,7 +35,6 @@
 		8D6A014C24D1B71300D91F34 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A014B24D1B71300D91F34 /* TabBarCoordinator.swift */; };
 		8D9FB3E424D2FCF9005B2DE8 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FB3E324D2FCF9005B2DE8 /* TabBarVC.swift */; };
 		8D9FB3E924D30557005B2DE8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FB3E824D30557005B2DE8 /* StringExtensions.swift */; };
-		8D9FB3EC24D30952005B2DE8 /* TabBarViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FB3EB24D30952005B2DE8 /* TabBarViewImpl.swift */; };
 		E1B90E0124CDFF4B0009D3A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B90E0024CDFF4B0009D3A0 /* AppDelegate.swift */; };
 		E1B90E0A24CDFF4C0009D3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */; };
 		E1B90E0D24CDFF4C0009D3A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B90E0B24CDFF4C0009D3A0 /* LaunchScreen.storyboard */; };
@@ -89,7 +88,6 @@
 		8D6A014B24D1B71300D91F34 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		8D9FB3E324D2FCF9005B2DE8 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		8D9FB3E824D30557005B2DE8 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		8D9FB3EB24D30952005B2DE8 /* TabBarViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewImpl.swift; sourceTree = "<group>"; };
 		E1B90DFD24CDFF4B0009D3A0 /* epsGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epsGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B90E0024CDFF4B0009D3A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1B90E0924CDFF4C0009D3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -303,7 +301,6 @@
 			isa = PBXGroup;
 			children = (
 				8D9FB3E324D2FCF9005B2DE8 /* TabBarVC.swift */,
-				8D9FB3EB24D30952005B2DE8 /* TabBarViewImpl.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -543,7 +540,6 @@
 				8D6A013E24D1A7E600D91F34 /* SplashScreenVC.swift in Sources */,
 				8D6A010E24D1A77B00D91F34 /* Optional+Apply.swift in Sources */,
 				8D6A014A24D1B4DB00D91F34 /* MainScreenViewImpl.swift in Sources */,
-				8D9FB3EC24D30952005B2DE8 /* TabBarViewImpl.swift in Sources */,
 				8D6A014C24D1B71300D91F34 /* TabBarCoordinator.swift in Sources */,
 				8D6A012624D1A78700D91F34 /* UIView+hide.swift in Sources */,
 				8D6A012524D1A78700D91F34 /* UIView+addSubviewWithSameSize.swift in Sources */,
