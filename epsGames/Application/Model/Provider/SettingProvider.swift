@@ -19,12 +19,10 @@ final class SettingProviderImpl: SettingProvider {
     func loadSetting(completion: @escaping (Bool) -> Void) {
         print("=loadSetting")
         let queryGlobal = DispatchGroup()
-        DispatchQueue.global().async(group: queryGlobal, qos: .userInteractive) {
-            //async(group: queryGlobal) {
+        DispatchQueue.global().async(group: queryGlobal, qos: .utility) {
             self.platforms = self.settingService.loadPlatforms()
         }
         DispatchQueue.global().async(group: queryGlobal) {
-            sleep(2)
             self.patitions = self.settingService.loadPatitions()
             sleep(2)
         }

@@ -9,7 +9,7 @@ protocol MainPageProvider {
 final class MainPageProviderImpl: MainPageProvider {
     
     func loadData() {
-        //
+        //требуется реализация
     }
     
     

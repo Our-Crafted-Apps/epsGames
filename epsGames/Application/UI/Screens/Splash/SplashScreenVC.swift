@@ -1,15 +1,16 @@
 import UIKit
 
-private struct Constants {
+private struct SplashScreenConstants {
 
     static let animationKey = "hand.animation"
-
     static let animationDuration: TimeInterval = 2
 }
 
 final class SplashScreenVC<View: SplashScreenView>: BaseViewController<View> {
     
     var onCheck: BoolClosure?
+    
+    var isLogin: Bool?
     
     var progressIndicatorImageView = UIImageView()
     
@@ -27,6 +28,7 @@ final class SplashScreenVC<View: SplashScreenView>: BaseViewController<View> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         progressIndicatorImageView.image = UIImage(named: "splash_load")
         progressIndicatorImageView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -38,13 +40,14 @@ final class SplashScreenVC<View: SplashScreenView>: BaseViewController<View> {
         progressIndicatorImageView.layer.shouldRasterize = true
         progressIndicatorImageView.layer.rasterizationScale = UIScreen.main.scale
         
-        settingServiceProvider.loadSetting { (loadData) in
+        settingServiceProvider.loadSetting { [weak self] (loadData) in
             print("=loadSetting: \(loadData)")
-            self.onCheck?(loadData)
+            self?.onCheck?(loadData)
         }
         
-//      Нужно предусмотреть загрузку данных о пользователе если он авторизован
-        //checkLoginStatus()
+//      Нужно предусмотреть загрузку данных о пользователе если он авторизован!
+//      В loadSetting ее запихнем с параметров авторизации?
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -57,18 +60,18 @@ final class SplashScreenVC<View: SplashScreenView>: BaseViewController<View> {
         print("=deinit SplashScreenVC")
     }
     
-    private func checkLoginStatus() {
-        let isLogin = false //loginStatusProvider.isLogin
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.onCheck?(isLogin)
-        }
-    }
+//    private func checkLoginStatus() {
+//        let isLogin = false //loginStatusProvider.isLogin
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//            self.onCheck?(isLogin)
+//        }
+//    }
 }
 
 extension SplashScreenVC {
 
     fileprivate var animationActive: Bool {
-        return progressIndicatorImageView.layer.animation(forKey: Constants.animationKey) != nil
+        return progressIndicatorImageView.layer.animation(forKey: SplashScreenConstants.animationKey) != nil
     }
 
     fileprivate func startAnimation() {
@@ -80,8 +83,8 @@ extension SplashScreenVC {
 
         animation.byValue = CGFloat(.pi * 2.0)
         animation.repeatCount = .infinity
-        animation.duration = Constants.animationDuration
+        animation.duration = SplashScreenConstants.animationDuration
 
-        progressIndicatorImageView.layer.add(animation, forKey: Constants.animationKey)
+        progressIndicatorImageView.layer.add(animation, forKey: SplashScreenConstants.animationKey)
     }
 }

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D165A6B24D979AA00D06C77 /* SettingProvaider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D165A6A24D979AA00D06C77 /* SettingProvaider.swift */; };
+		8D07ABC724DABA7F00DD413D /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D07ABC624DABA7F00DD413D /* MainPage.swift */; };
+		8D165A6B24D979AA00D06C77 /* SettingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D165A6A24D979AA00D06C77 /* SettingProvider.swift */; };
 		8D165A6E24D99D1600D06C77 /* MainPageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D165A6D24D99D1600D06C77 /* MainPageProvider.swift */; };
 		8D165A7024D9A44000D06C77 /* MessageScreenViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D165A6F24D9A44000D06C77 /* MessageScreenViewImpl.swift */; };
 		8D165A7224D9A73300D06C77 /* ProfileScreenViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D165A7124D9A73300D06C77 /* ProfileScreenViewImpl.swift */; };
@@ -73,7 +74,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D165A6A24D979AA00D06C77 /* SettingProvaider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProvaider.swift; sourceTree = "<group>"; };
+		8D07ABC624DABA7F00DD413D /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		8D165A6A24D979AA00D06C77 /* SettingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProvider.swift; sourceTree = "<group>"; };
 		8D165A6D24D99D1600D06C77 /* MainPageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageProvider.swift; sourceTree = "<group>"; };
 		8D165A6F24D9A44000D06C77 /* MessageScreenViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreenViewImpl.swift; sourceTree = "<group>"; };
 		8D165A7124D9A73300D06C77 /* ProfileScreenViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewImpl.swift; sourceTree = "<group>"; };
@@ -155,7 +157,7 @@
 		8D165A6924D9799300D06C77 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				8D165A6A24D979AA00D06C77 /* SettingProvaider.swift */,
+				8D165A6A24D979AA00D06C77 /* SettingProvider.swift */,
 				8D165A6D24D99D1600D06C77 /* MainPageProvider.swift */,
 			);
 			path = Provider;
@@ -417,6 +419,7 @@
 			children = (
 				8DA5C7C424D965E000C8D2B0 /* Platform.swift */,
 				8DA5C7C624D966D600C8D2B0 /* Patition.swift */,
+				8D07ABC624DABA7F00DD413D /* MainPage.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -630,7 +633,7 @@
 				8D6A013524D1A7C200D91F34 /* StartCoordinator.swift in Sources */,
 				8D6A011024D1A77B00D91F34 /* Functions.swift in Sources */,
 				8D6A014524D1B16D00D91F34 /* MainScreenVC.swift in Sources */,
-				8D165A6B24D979AA00D06C77 /* SettingProvaider.swift in Sources */,
+				8D165A6B24D979AA00D06C77 /* SettingProvider.swift in Sources */,
 				8DA5C7BC24D9639000C8D2B0 /* MessageScreenVC.swift in Sources */,
 				8D9FB3E924D30557005B2DE8 /* StringExtensions.swift in Sources */,
 				8DA5C7C524D965E000C8D2B0 /* Platform.swift in Sources */,
@@ -648,6 +651,7 @@
 				8D9FB3E424D2FCF9005B2DE8 /* TabBarVC.swift in Sources */,
 				8DA5C7BE24D963DE00C8D2B0 /* ProfileScreenVC.swift in Sources */,
 				8DA5C7C224D964E800C8D2B0 /* SettingServiceImp.swift in Sources */,
+				8D07ABC724DABA7F00DD413D /* MainPage.swift in Sources */,
 				8D6A012324D1A78700D91F34 /* UIAlertControllerCommonInputData.swift in Sources */,
 				8D6A012924D1A78700D91F34 /* ContainerViewController.swift in Sources */,
 				8DA5C7CA24D9677500C8D2B0 /* GamesScreenVC.swift in Sources */,

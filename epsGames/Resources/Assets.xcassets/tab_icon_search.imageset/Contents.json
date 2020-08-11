@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tab_icon_search.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
