@@ -1,11 +1,3 @@
-//
-//  TabBarCoordinator.swift
-//  epsGames
-//
-//  Created by Кирилл Пучков on 29.07.2020.
-//  Copyright © 2020 Sergey Mikhailov. All rights reserved.
-//
-
 import UIKit
 
 final class TabBarCoordinator: BaseCoordinator {
@@ -29,9 +21,19 @@ final class TabBarCoordinator: BaseCoordinator {
         let tabBarScreen = screenFactory.makeTabBarScreen()
         let mainScreen = screenFactory.makeMainScreen()
         mainScreen.tabBarItem = UITabBarItem(title: "Main", image: UIImage(named: "tab_icon_main"), tag: 0)
-        tabBarScreen.viewControllers = [mainScreen]
-        //router.push(mainScreen, animated: false)
-        //router.setRootModule(mainScreen, hideBar: false)
+        
+        let searchScreen = screenFactory.makeSearchScreen()
+        searchScreen.tabBarItem = UITabBarItem(title: "Search", image: UIImage(named: "tab_icon_search"), tag: 1)
+        
+        let gamesScreen = screenFactory.makeGamesScreen()
+        gamesScreen.tabBarItem = UITabBarItem(title: "Games", image: UIImage(named: "tab_icon_games"), tag: 2)
+        
+        let profileScreen = screenFactory.makeProfileScreen()
+        profileScreen.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "tab_icon_profile"), tag: 3)
+        
+        
+        tabBarScreen.viewControllers = [mainScreen, searchScreen, gamesScreen, profileScreen]
+
         router.setRootModule(tabBarScreen)
     }
     
